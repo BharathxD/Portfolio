@@ -143,13 +143,8 @@ const button = $(".toastBtn"),
     });
   }
 
-  $(document).ready( function() {
-    $.ajax({
-        type: 'get',
-        url: 'http://pageToLoad.from',
-        success: function(response) {
-            // response = data which has been received and passed on to the 'success' function.
-            $('body').html(response);
-        }
-    });
-});
+  
+  var loader = $('#preloader');
+  $(document).ready(()=> {
+    loader.css('display','none'); 
+  });

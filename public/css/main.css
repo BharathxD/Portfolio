@@ -186,6 +186,15 @@ textarea {
   border-radius: 20px;
 }
 
+#preloader {
+  background: #000 url(https://gifimage.net/wp-content/uploads/2018/11/circle-loader-gif-2.gif) no-repeat center center;
+  background-size: 25%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+}
+
 /* -------------  */
 /* Navigation Bar */
 nav {
