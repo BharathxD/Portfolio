@@ -60,9 +60,7 @@ $(window).load(() => {
 });
 
 $(document).ready(function () {
-  var initScrollTop = $(window).scrollTop();
   parallax = $(".section-1");
-  $(parallax).css({ "background-position-y": initScrollTop / 75 + "%" });
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     $(parallax).css({ "background-position-y": scrollTop / 75 + "%" });
