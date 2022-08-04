@@ -10,7 +10,7 @@
   <!-- ------------------------------- -->
   <!-- Bottom Floating Navigation Menu -->
 
-  <nav class="">
+  <nav>
     <a
       class="anchor-a"
       href="#hero"
@@ -99,21 +99,20 @@
             &nbsp;
             <span> ~/AboutMe &mdash; -zsh</span>
           </span>
-          <br /><br />
+          <br><br>
           <i class="bi bi-currency-dollar"></i> Hello! I'm Bharath, an
           18-year-old chap based in Hyderabad, currently a Bachelor of Computer
           Applications undergraduate student at
           <a href="https://klh.edu.in/" target="_blank">
-            KL University Hyderabad </a
-          >. <br /><br />
+            KL University Hyderabad 
+          </a>. 
+          <br><br>
           <i class="bi bi-currency-dollar"></i>
           I'm a developer, geek and curious human besides being an Design
           enthusiast. Long story short, I'm looking for cool and exciting
           internship opportunities where I could step in on many different
           levels.
-          <br /><br />
-          <!-- Competencies I possess : Full Stack Web Development { HTML/CSS, Bootstrap, JavaScript (ReactJS & NodeJS), jQuery, REST API, NoSQL (MongoDB) } along with Git, CLI, C/C++, Java, Android Application Development. 
-              <br> -->
+          <br><br>
           <i class="bi bi-currency-dollar"></i> I Love the logic and structure
           of coding and always strive to write elegant and efficient code.
           Reading novels and writing blogs are a couple of my favorite things to
@@ -195,13 +194,13 @@
           </div>
         </span>
         <span class="java">
-          <p>Java</p>
+          <p>Java&nbsp;<i class="fa-brands fa-java"></i></p>
           <div class="progress">
             <div class="progress-value"></div>
           </div>
         </span>
         <span class="mad">
-          <p>Android Development&nbsp;<i class="fa-brands fa-android"></i></p>
+          <p>Android App Development&nbsp;<i class="fa-brands fa-android"></i></p>
           <div class="progress">
             <div class="progress-value"></div>
           </div>
@@ -310,7 +309,9 @@
           <p>
             I'd love to hear from you :D
             <br />
-            As soon as possible, I'll get back to you
+            Drop a message or Mail me, 
+            <br>
+            I'll get back to you As soon as possible.
             <br />
             Here's how you can reach me...
           </p>
@@ -343,34 +344,45 @@
           </ul>
         </div>
       </div>
+      <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+            <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Your message has been sent! Have a wonderful day</span>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+        <div class="prog"></div>
+    </div>
       <div class="form">
         <div class="contact-form">
-          <form action="/" autocomplete="off">
+          <form autocomplete="off" id="form" onsubmit="sendMail(); event.preventDefault();">
             <h3 class="title">Drop me a Message!</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
-              <span>Username</span>
+              <input type="text" name="name" class="input" id="Name"/>
+              <label for="">Name</label>
+              <span>Name</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
+              <input type="email" name="email" class="input" id="Email" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
+              <textarea name="message" class="input" id="Message"></textarea>
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" value="Send" class="btn a" />
+            <input type="submit" value="Send" class="btn a" name='submit'/>
             <input type="reset" value="Clear" class="btn" id="btn_2" />
           </form>
         </div>
       </div>
     </div>
   </section>
-
   <!-- ------------------- -->
+
 </body>
 
 <%- include("partials/footer"); -%>
