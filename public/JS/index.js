@@ -145,6 +145,6 @@ const button = $(".toastBtn"),
 
   
   var loader = $('#preloader');
-  $(document).ready(()=> {
+  $(window).on( "load", function() {
     loader.css('display','none'); 
-  });
+});
