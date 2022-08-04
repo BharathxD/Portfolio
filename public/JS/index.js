@@ -151,6 +151,6 @@ const button = $(".toastBtn"),
     });
   });
 
-  $(window).on( "ready",  function() {
+  $(document).ready( function() {
   $('.section-1').css('animation',' AnimOne 3s ease');
   });
