@@ -19,12 +19,12 @@ inputs.forEach((input) => {
 });
 
 const blobity = new Blobity({
-  color: "#eeda00a8",
+  color: "#ffffff",
   zIndex: 10000,
   opacity: 0.5,
   magnetic: true,
   dotColor: "#FF2E63",
-  dotSize: 15,
+  dotSize: 14,
   font: "Montserrat",
   fontWeight: 400,
   tooltipPadding: 4,
@@ -145,9 +145,9 @@ const button = $(".toastBtn"),
 
   
   var loader = $('#preloader');
-  $(window).on( "load", function() {
-    loader.css({
-      'animation': 'open 2s linear',
+  $(window).on( "load", async function() {
+    await loader.css({
       'display':'none',
-    }); 
+    });
+    $('#section-1').css('animation',' AnimOne 3s ease');
 });
