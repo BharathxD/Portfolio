@@ -169,7 +169,7 @@ textarea {
   position: fixed;
   top: 0px;
   overflow: hidden;
-  z-index: 100000;
+  z-index: 10000;
   background-color: transparent;
   content: "";
   display: table;
@@ -199,7 +199,7 @@ nav {
   width: max-content;
   position: fixed;
   left: 50%;
-  z-index: 2000;
+  z-index: 20000;
   padding: 1.8rem 0;
   bottom: 1rem;
   overflow: hidden;

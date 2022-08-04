@@ -1,10 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon app.js"
   },
   "author": "Bharath",
   "license": "ISC",
@@ -13,7 +12,7 @@
     "connect-flash": "^0.1.1",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "nodemailer": "^6.7.7"
-  }
+    "express": "^4.18.1"
+  },
+  "description": ""
 }
