@@ -147,7 +147,7 @@ const button = $(".toastBtn"),
   var loader = $('#preloader');
   $(window).on( "load", function() {
     loader.css({
+      'animation': 'open 2s linear',
       'display':'none',
-      'animation': 'open 2s linear'
     }); 
 });

@@ -193,67 +193,18 @@ textarea {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: rgb(31, 31, 31);
+  background: #2b2e2d url(/img/Load.gif) no-repeat center center;
   position: fixed;
   z-index: 1000000;
   flex-direction: column-reverse;
 }
-@-webkit-keyframes open {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes open {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-#preloader .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-}
-#preloader .content p {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
-}
-#preloader .container {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background: linear-gradient(165deg, rgb(255, 255, 255) 0%, rgb(220, 220, 220) 40%, rgb(170, 170, 170) 98%, rgb(10, 10, 10) 100%);
-  position: relative;
-  transition: 1s ease;
-}
-#preloader .loader:before {
+#preloader h1 {
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border-bottom: 0 solid rgba(255, 255, 255, 0.0196078431);
-  box-shadow: 0 -10px 20px 20px rgba(255, 255, 255, 0.2509803922) inset, 0 -5px 15px 10px rgba(255, 255, 255, 0.3137254902) inset, 0 -2px 5px rgba(255, 255, 255, 0.5019607843) inset, 0 -3px 2px rgba(255, 255, 255, 0.7333333333) inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff, 0 5px 5px rgba(255, 255, 255, 0.5647058824), 0 10px 15px rgba(255, 255, 255, 0.3764705882), 0 10px 20px 20px rgba(255, 255, 255, 0.2509803922);
-  filter: blur(3px);
-  -webkit-animation: 2s rotate linear infinite;
-          animation: 2s rotate linear infinite;
-}
-@-webkit-keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
+  bottom: 100px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+  color: #fff;
 }
 
 /* -------------  */
@@ -1540,6 +1491,9 @@ footer .header h3 {
   #preloader .container {
     height: 200px;
     width: 200px;
+  }
+  #preloader h1 {
+    font-size: 2rem;
   }
   /* -------------- */
   /* Navigation Bar */
