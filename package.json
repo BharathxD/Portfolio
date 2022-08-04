@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Bharath",
   "license": "ISC",
