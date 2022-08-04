@@ -192,7 +192,25 @@ textarea {
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 10000;
+  z-index: 1000000;
+  -webkit-animation: load 1s;
+          animation: load 1s;
+}
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* -------------  */
@@ -890,14 +908,6 @@ nav .anchor-d:hover {
   background: #fff;
   height: 20px;
   width: 0;
-}
-@-webkit-keyframes load {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 68%;
-  }
 }
 @keyframes load {
   0% {
