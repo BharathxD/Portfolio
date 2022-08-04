@@ -142,3 +142,14 @@ const button = $(".toastBtn"),
       clearTimeout(timer2);
     });
   }
+
+  $(document).ready( function() {
+    $.ajax({
+        type: 'get',
+        url: 'http://pageToLoad.from',
+        success: function(response) {
+            // response = data which has been received and passed on to the 'success' function.
+            $('body').html(response);
+        }
+    });
+});
