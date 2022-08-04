@@ -145,9 +145,13 @@ const button = $(".toastBtn"),
 
   
   var loader = $('#preloader');
-  $(window).on( "load", async function() {
-    await loader.css({
+  load()
+
+ async function load() {
+  await $(window).on( "load",  function() {
+     loader.css({
       'display':'none',
     });
-    $('#section-1').css('animation',' AnimOne 3s ease');
-});
+  });
+  $('.section-1').css('animation',' AnimOne 3s ease');
+  }

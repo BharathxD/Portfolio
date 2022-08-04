@@ -311,8 +311,6 @@ nav .anchor-d:hover {
   overflow: hidden;
   align-items: center;
   background-image: url(/img/filter-2.webp);
-  -webkit-animation: AnimOne 3s ease;
-          animation: AnimOne 3s ease;
 }
 @-webkit-keyframes AnimOne {
   0% {
