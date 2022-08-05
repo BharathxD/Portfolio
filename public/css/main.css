@@ -193,7 +193,7 @@ textarea {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background: #2b2e2d url(/img/Load.webm) no-repeat center center;
+  background: #2b2e2d url(/img/Load.gif) no-repeat center center;
   position: fixed;
   z-index: 1000000;
   flex-direction: column-reverse;
