@@ -1,11 +1,15 @@
 <%- include("partials/header"); -%>
 
   <body>
-    <!-- Progress Container -->
+
+    <!-- Progress Bar -->
 
     <div class="progressContainer">
       <div class="progressBar"></div>
     </div>
+
+    <!-- --------- -->
+    <!-- Preloader -->
 
     <div id="preloader">
       <h1>LOADING</h1>
@@ -14,7 +18,7 @@
     <!-- ------------------------------- -->
     <!-- Bottom Floating Navigation Menu -->
 
-    <nav>
+    <nav id="navbar">
       <a class="anchor-a" href="#hero" data-blobity-offset-x="0" data-blobity-offset-y="0">Home</a>
       <a class="anchor-b" href="#about" data-blobity-offset-y="0" data-blobity-offset-x="0">About</a>
       <a class="anchor-c" href="#test" data-blobity-offset-x="0" data-blobity-offset-y="0">Work</a>
@@ -24,29 +28,21 @@
     <!-- ------------ -->
     <!-- Main Section -->
 
-    <section class="section-1" id="hero">
-      <p class="marquee">
+    <section id="section-1">
+      <p class="marquee-l">
         <span class="float-left">
           Imagine ○ Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○ Design ○ Code ○
           Sleep ○ Repeat Imagine ○ Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○
           Design ○ Code ○ Sleep ○ Repeat Imagine ○ Design ○ Code ○ Sleep ○ Repeat
-          ○ Imagine ○ Design ○ Code ○ Sleep ○ Repeat Imagine ○ Design ○ Code ○
-          Sleep ○ Repeat ○ Imagine ○ Design ○ Code ○ Sleep ○ Repeat Imagine ○
-          Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○ Design ○ Code ○ Sleep ○
-          Repeat Imagine ○ Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○ Design ○
-          Code ○ Sleep ○ Repeat
+          ○ Imagine ○ Design ○ Code ○ Sleep ○ Repeat
         </span>
       </p>
-      <p class="marquee-l">
+      <p class="marquee-r">
         <span class="float-right">
           Imagine ○ Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○ Design ○ Code ○
           Sleep ○ Repeat Imagine ○ Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○
           Design ○ Code ○ Sleep ○ Repeat Imagine ○ Design ○ Code ○ Sleep ○ Repeat
-          ○ Imagine ○ Design ○ Code ○ Sleep ○ Repeat Imagine ○ Design ○ Code ○
-          Sleep ○ Repeat ○ Imagine ○ Design ○ Code ○ Sleep ○ Repeat Imagine ○
-          Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○ Design ○ Code ○ Sleep ○
-          Repeat Imagine ○ Design ○ Code ○ Sleep ○ Repeat ○ Imagine ○ Design ○
-          Code ○ Sleep ○ Repeat
+          ○ Imagine ○ Design ○ Code ○ Sleep ○ Repeat
         </span>
       </p>
       <div class="container">
@@ -94,7 +90,7 @@
       </div>
     </section>
 
-    <!-- ------------------ -->
+    <!-- --------------- -->
     <!-- Skills Sections -->
 
     <section id="skills">
@@ -128,7 +124,7 @@
               <div class="progress-value"></div>
             </div>
           </span>
-          <!-- --------- -->
+          <!-- -------- -->
           <!-- JS SKILL -->
           <span class="js">
             <p>JavaScript <i class="fa-brands fa-js"></i></p>
@@ -136,7 +132,7 @@
               <div class="progress-value"></div>
             </div>
           </span>
-          <!-- --------- -->
+          <!-- -------- -->
           <!-- React JS -->
           <span class="react">
             <p>ReactJS <i class="fa-brands fa-react"></i></p>
@@ -144,7 +140,7 @@
               <div class="progress-value"></div>
             </div>
           </span>
-          <!-- --------- -->
+          <!-- --------------- -->
           <!-- Bootstrap SKILL -->
           <span class="bootstrap">
             <p>Bootstrap <i class="fa-brands fa-bootstrap"></i></p>
@@ -152,6 +148,8 @@
               <div class="progress-value"></div>
             </div>
           </span>
+          <!-- ------------ -->
+          <!-- JQuery SKILL -->
           <span class="jquery">
             <p>JQuery</p>
             <div class="progress">
@@ -161,18 +159,24 @@
         </div>
         <div class="backend">
           <h1>Backend</h1>
+          <!-- ----------- -->
+          <!-- C/C++ SKILL -->
           <span class="c">
             <p>C/C++</p>
             <div class="progress">
               <div class="progress-value"></div>
             </div>
           </span>
+          <!-- ---------- -->
+          <!-- Java SKILL -->
           <span class="java">
-            <p>Java&nbsp;<i class="fa-brands fa-java"></i></p>
+            <p>Java Core&nbsp;<i class="fa-brands fa-java"></i></p>
             <div class="progress">
               <div class="progress-value"></div>
             </div>
           </span>
+          <!-- ------------- -->
+          <!-- Android SKILL -->
           <span class="mad">
             <p>
               Android App Development&nbsp;<i class="fa-brands fa-android"></i>
@@ -181,18 +185,24 @@
               <div class="progress-value"></div>
             </div>
           </span>
+          <!-- ------------ -->
+          <!-- NodeJS SKILL -->
           <span class="nodejs">
             <p>NodeJS &nbsp;<i class="fa-brands fa-node"></i></p>
             <div class="progress">
               <div class="progress-value"></div>
             </div>
           </span>
+          <!-- ------------- -->
+          <!-- MongoDB SKILL -->
           <span class="mongodb">
             <p>MongoDB &nbsp;<i class="fa-solid fa-database"></i></p>
             <div class="progress">
               <div class="progress-value"></div>
             </div>
           </span>
+          <!-- --------- -->
+          <!-- Git SKILL -->
           <span class="git">
             <p>Git &nbsp;<i class="fa-brands fa-git-alt"></i></p>
             <div class="progress">
@@ -206,7 +216,7 @@
     <!-- ------------------ -->
     <!-- Procjects Sections -->
 
-    <section id="test">
+    <section id="Projects">
       <div class="container reveal fade-bottom">
         <div class="back_text">
           <span class="reveal">#1</span>
@@ -227,7 +237,7 @@
           </a>
         </div>
         <div class="video reveal fade-right">
-          <img src="img/Blogger.webp" alt="" />
+          <img src="images/Blogger.webp" alt="" />
         </div>
       </div>
 
@@ -251,7 +261,7 @@
           </a>
         </div>
         <div class="video reveal fade-right">
-          <img src="img/To-Do-List.webp" alt="" />
+          <img src="images/To-Do-List.webp" alt="" />
         </div>
       </div>
     </section>
