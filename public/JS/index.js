@@ -8,6 +8,7 @@ const name = $('#Name');
 const email = $('#Email');
 const message = $('#Message');
 
+/* ------------------- */
 /* Pre-Loader Function */
 
 var loader = $('#preloader');
@@ -17,8 +18,8 @@ $(window).on('load', () => {
   });
 });
 
-/* ---------------- */
-/* Scroll Animation */
+/* -------------- */
+/* Form Animation */
 
 function focusFunc() {
   let parent = this.parentNode;
@@ -42,7 +43,6 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-
     if (elementTop < windowHeight) {
       reveals[i].classList.add('active');
     } else {
@@ -52,6 +52,9 @@ function reveal() {
 }
 
 window.addEventListener('scroll', reveal);
+
+/* ------------ */
+/* Progress Bar */
 
 $(window).load(() => {
   $(window).scroll(() => {
