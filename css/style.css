@@ -339,7 +339,7 @@ nav .anchor-d {
     justify-content: center;
     overflow: hidden;
     align-items: center;
-    background-image: url(.././images/Load.gif);
+    background-image: url(.././images/background.webp);
 }
 
 @-webkit-keyframes AnimOne {
