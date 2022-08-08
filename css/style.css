@@ -5,7 +5,7 @@ nav .anchor-d {
     color: #fff;
     text-transform: uppercase;
     background: 0 0;
-    text-decoration: none
+    text-decoration: none;
 }
 
 #hero,
@@ -236,7 +236,7 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: url(.././images/Load.gif) center center no-repeat #2b2e2d;
+    background: url(.././images/) center center no-repeat #2b2e2d;
     z-index: 1000000;
     flex-direction: column-reverse
 }
@@ -309,12 +309,12 @@ nav .anchor-b {
 }
 
 nav .anchor-c {
-    display: none;
-    padding: 1.82rem 2rem;
+    padding: 1.82rem 1.8rem;
     margin: 0
 }
 
 nav .anchor-d {
+    display: none;
     border-top-right-radius: .9rem;
     border-bottom-right-radius: .9rem;
     padding: 1.82rem 1rem;
@@ -1646,11 +1646,12 @@ footer .header h3 {
     }
 
     nav .anchor-c {
-        display: inline
+        padding: 1.82rem 4rem 1.82rem 3rem
     }
 
     nav .anchor-d {
-        padding: 1.82rem 4rem 1.82rem 3rem
+        padding: 1.82rem 4rem 1.82rem 3rem;
+        display: inline;
     }
 
     #hero {
