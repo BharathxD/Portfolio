@@ -1,3 +1,7 @@
+* {
+    -webkit-overflow-scrolling:touch;
+}
+
 nav .anchor-a,
 nav .anchor-b,
 nav .anchor-c,
@@ -236,7 +240,7 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: url(.././images/) center center no-repeat #2b2e2d;
+    background: url(.././images/Load.gif) center center no-repeat #2b2e2d;
     z-index: 1000000;
     flex-direction: column-reverse
 }
