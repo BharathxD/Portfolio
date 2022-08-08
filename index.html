@@ -1,172 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="icon/apple-touch-icon.png" />
-  </head>
+    <title> Bharath </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icons/Favicon.ico?v=1.1">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
+</head>
 
-    <nav>
-      <a class="anchor-a" href="#home">Home</a>
-      <a class="anchor-b" href="#about">About</a>
-      <a class="anchor-c" href="#project">Work</a>
-      <a class="anchor-d" href="#contact">Contact</a>
-    </nav>
+<body>
 
-    <div class="home" id="home"></div>
+    <!-- Progress Bar -->
 
-    <section class="section-1" id="hero">
-      <div class="hero-container">
-        <h1 class="Main-Logo-h1">Hi There, I'm Bharath Lakshman Kumar!</h1>
-      </div>
-      <h5 class="Main-Logo-Bottom-h5">
-        I'm a student at KL University Hyderabad
-      </h5>
-    </section>
-
-    <div class="marquee-container">
-      <marquee
-        behavior="scroll"
-        direction="ltr"
-        scrollamount="15"
-        loop="infinite">
-        <span>
-          Looking for Internship Opportunities ☺︎ &emsp; &emsp; Looking for
-          Internship Opportunities ☺︎ &emsp; &emsp; Looking for Internship
-          Opportunities ☺︎ &emsp; &emsp; Looking for Internship Opportunities ☺︎
-          &emsp; &emsp; Looking for Internship Opportunities ☺︎ &emsp; &emsp;
-          Looking for Internship Opportunities ☺︎ &emsp;
-        </span>
-      </marquee>
+    <div class="progressContainer">
+        <div class="progressBar"></div>
     </div>
 
-    <section id="about">
-      <h1>ABOUT ME</h1>
-      <div class="container">
-        <div class="img">
-          <img src="img/profile.png" alt="" />
+    <!-- --------- -->
+    <!-- Preloader -->
+
+    <div id="preloader">
+        <h1>LOADING</h1>
+    </div>
+
+    <!-- ------------------------------- -->
+    <!-- Bottom Floating Navigation Menu -->
+
+    <nav id="navbar">
+        <a class="anchor-a" href="#hero" data-blobity-offset-x="0" data-blobity-offset-y="0">Home</a>
+        <a class="anchor-b" href="#about" data-blobity-offset-y="0" data-blobity-offset-x="0">About</a>
+        <a class="anchor-c" href="#Projects" data-blobity-offset-x="0" data-blobity-offset-y="0">Work</a>
+        <a class="anchor-d" href="#contact" data-blobity-offset-x="0" data-blobity-offset-y="0">Contact</a>
+    </nav>
+
+    <!-- ------------ -->
+    <!-- Hero Section -->
+
+    <section id="hero">
+        <p class="marquee-l">
+            <span class="float-left">
+                Imagine ○ Design ○ Code ○ Sleep ○ Reiterate ○ Imagine ○ Design ○ Code ○
+                Sleep ○ Reiterate Imagine ○ Design ○ Code ○ Sleep ○ Reiterate ○ Imagine ○
+                Design ○ Code ○ Sleep ○ Reiterate Imagine ○ Design ○ Code ○ Sleep ○ Reiterate
+                ○ Imagine ○ Design ○ Code ○ Sleep ○ Reiterate
+            </span>
+        </p>
+        <p class="marquee-r">
+            <span class="float-right">
+                Imagine ○ Design ○ Code ○ Sleep ○ Reiterate ○ Imagine ○ Design ○ Code ○
+                Sleep ○ Reiterate Imagine ○ Design ○ Code ○ Sleep ○ Reiterate ○ Imagine ○
+                Design ○ Code ○ Sleep ○ Reiterate Imagine ○ Design ○ Code ○ Sleep ○ Reiterate
+                ○ Imagine ○ Design ○ Code ○ Sleep ○ Reiterate
+            </span>
+        </p>
+        <div class="container">
+            <span> Hi There, I'm </span>
+            <h1>Bharath.</h1>
         </div>
-        <div class="text">
-          <p>
-            Hello! I'm Bharath, an 18-year-old chap from Hyderabad looking for
-            cool and exciting internship opportunities. Long story short, I'm
-            currently looking for a new project where I could step in on many
-            different levels : content, social media, digital communication,
-            design, and more! You'd like to work with someone who's passionate,
-            experienced, polyvalent, constantly learning, and who knows the
-            internet like the back of his hand? 👋
-          </p>
-        </div>
-      </div>
     </section>
 
-    <section id="project">
-      <div class="container-grid">
+    <!-- -------------- -->
+    <!-- About Sections -->
+
+    <section id="about">
+        <h1 class="reveal fade-bottom-h">ABOUT ME</h1>
         <div class="container">
-          <div class="number">1</div>
-          <div class="title">#Project 1</div>
+            <div class="img">
+                <img src="images/profile.webp" alt="" />
+            </div>
+            <div class="text">
+                <p>
+                    <span class="utils">
+                        <i class="bi bi-x-circle-fill" style="color: rgb(255, 50, 50)"></i>
+                        <i class="bi bi-dash-circle-fill" style="color: rgb(255, 222, 34)"></i>
+                        <i class="bi bi-plus-circle-fill" style="color: rgb(47, 202, 47)"></i>
+                        &nbsp;
+                        <span> ~/AboutMe &mdash; -zsh</span>
+                    </span>
+                    <br /><br />
+                    <i class="bi bi-currency-dollar"></i> Hello! I'm Bharath, an
+                    18-year-old chap based in Hyderabad, currently a Bachelor of Computer
+                    Applications undergraduate student at
+                    <a href="https://klh.edu.in/" target="_blank">
+                        KL University Hyderabad </a>. <br /><br />
+                    <i class="bi bi-currency-dollar"></i>
+                    I'm a developer, geek and curious human besides being an Design
+                    enthusiast. Long story short, I'm looking for cool and exciting
+                    internship opportunities where I could step in on many different
+                    levels.
+                    <br /><br />
+                    <i class="bi bi-currency-dollar"></i> I Love the logic and structure
+                    of coding and always strive to write elegant and efficient code.
+                    Reading novels and writing blogs are a couple of my favorite things to
+                    do in my spare time
+                </p>
+            </div>
         </div>
-        <div class="container">
-          <div class="number">2</div>
-          <div class="title">#Project 2</div>
-        </div>
-        <div class="container">
-          <div class="number">3</div>
-          <div class="title">#Project 3</div>
-        </div>
-        <div class="container">
-          <div class="number">4</div>
-          <div class="title">#Project 4</div>
-        </div>
-      </div>
     </section>
+
+    <!-- --------------- -->
+    <!-- Skills Sections -->
+
+    <section id="skills">
+        <div class="container">
+            <div class="header">
+                <div class="background-text">Skills</div>
+                <p class="skill">My Skills</p>
+                <div class="content">
+                    <p>
+                        <i class="fa-solid fa-code"></i> I specialize in FrontEnd
+                        Web-Development as a part of my passion and interests. Additionally,
+                        I gained more insight into the Command Line Interface (CLI) and
+                        RESTful API. <i class="fa-solid fa-code"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="frontend">
+                <h1>Frontend</h1>
+                <!-- HTML SKILL -->
+                <span class="html">
+                    <p>HTML5 <i class="fa-brands fa-html5"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- --------- -->
+                <!-- CSS SKILL -->
+                <span class="css">
+                    <p>CSS3 <i class="fa-brands fa-css3"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- -------- -->
+                <!-- JS SKILL -->
+                <span class="js">
+                    <p>JavaScript <i class="fa-brands fa-js"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- -------- -->
+                <!-- React JS -->
+                <span class="react">
+                    <p>ReactJS <i class="fa-brands fa-react"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- --------------- -->
+                <!-- Bootstrap SKILL -->
+                <span class="bootstrap">
+                    <p>Bootstrap <i class="fa-brands fa-bootstrap"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- ------------ -->
+                <!-- JQuery SKILL -->
+                <span class="jquery">
+                    <p>JQuery</p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="backend">
+                <h1>Backend</h1>
+                <!-- ----------- -->
+                <!-- C/C++ SKILL -->
+                <span class="c">
+                    <p>C/C++</p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- ---------- -->
+                <!-- Java SKILL -->
+                <span class="java">
+                    <p>Java Core&nbsp;<i class="fa-brands fa-java"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- ------------- -->
+                <!-- Android SKILL -->
+                <span class="mad">
+                    <p>
+                        Android App Development&nbsp;<i class="fa-brands fa-android"></i>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- ------------ -->
+                <!-- NodeJS SKILL -->
+                <span class="nodejs">
+                    <p>NodeJS &nbsp;<i class="fa-brands fa-node"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- ------------- -->
+                <!-- MongoDB SKILL -->
+                <span class="mongodb">
+                    <p>MongoDB &nbsp;<i class="fa-solid fa-database"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+                <!-- --------- -->
+                <!-- Git SKILL -->
+                <span class="git">
+                    <p>Git &nbsp;<i class="fa-brands fa-git-alt"></i></p>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------ -->
+    <!-- Procjects Sections -->
+
+    <section id="Projects">
+        <div class="container reveal fade-bottom">
+            <div class="back_text">
+                <span class="reveal">#1</span>
+            </div>
+            <div class="content">
+                <h1>Blogger</h1>
+                <p>
+                    We’ve all spent plenty of time looking through blog sites. Many seem
+                    like an endless scroll with no minimal organization of UI elements
+                    (Quick Access). <br />
+                    This
+                    <a href="https://blogger-by-bharath.herokuapp.com/"
+                        style="font-size: 2rem; text-decoration: underline dotted white" target="_blank">website</a>
+                    allows you to write quick and minimalistic blogs
+                </p>
+                <a href="https://github.com/BharathxD/Blogger" class="github" target="_blank">
+                    Github <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="video reveal fade-right">
+                <img src="images/Blogger.webp" alt="" />
+            </div>
+        </div>
+
+        <div class="container reveal fade-bottom">
+            <div class="back_text">
+                <span class="reveal">#2</span>
+            </div>
+            <div class="content">
+                <h1>To-Do-List</h1>
+                <p>
+                    Simply put, it's a simple task list Webapplication that keeps track of
+                    your daily tasks. I've designed this
+                    <a href="https://todolist-by-bharath.herokuapp.com/"
+                        style="font-size: 2rem; text-decoration: underline dotted white" target="_blank">
+                        website
+                    </a>
+                    to be mobile friendly and it adapts to different viewport sizes.
+                </p>
+                <a href="https://github.com/BharathxD/To-Do-List" class="github" target="_blank">
+                    Github <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="video reveal fade-right">
+                <img src="images/To-Do-List.webp" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------- -->
+    <!-- Contact Section -->
 
     <section id="contact">
-      <div class="container">
-        <div class="form">
-          <div class="contact-info">
-            <h3 class="title">Let's get in touch.</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolorum adipisci recusandae praesentium dicta!
-            </p>
-
-            <div class="info">
-              <div class="information">
-                <img src="img/location.png" class="icon" alt="" />
-                <p>Hyderabad, Telangana</p>
-              </div>
-              <div class="information">
-                <img src="img/email.png" class="icon" alt="" />
-                <a href="mailto:bharathxxd@gmail.com">Bharathxxd@gmail.com</a>
-              </div>
-              <div class="information">
-                <img src="img/phone.png" class="icon" alt="" />
-               <a href="tel:+91824-722-8027">8247228027</a>
-              </div>
+        <div class="container">
+            <div class="contact_container">
+                <div class="content">
+                    <h1>
+                        Let's get in <br />
+                        <span>Touch.</span>
+                    </h1>
+                    <p>
+                        I'd love to hear from you :D
+                        <br />
+                        Drop a message or Mail me,
+                        <br />
+                        I'll get back to you As soon as possible.
+                        <br />
+                        Here's how you can reach me...
+                    </p>
+                </div>
+                <div class="lists">
+                    <ul>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <a href="https://goo.gl/maps/BgeJnPiMKqekpGfR9" target="_blank"
+                                data-blobity-tooltip="Location">Hyderabad</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-inbound-fill"></i>
+                            <a href="tel:8247228027" data-blobity-tooltip="Mobile">8247228027</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:bharathxxd@gmail.com"
+                                data-blobity-tooltip="Mail me!">Bharathxxd@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-
-          <div class="contact-form">
-            <form action="index.html" autocomplete="off">
-              <h3 class="title">Contact Me</h3>
-              <div class="input-container">
-                <input type="text" name="name" class="input" />
-                <label for="">Username</label>
-                <span>Username</span>
-              </div>
-              <div class="input-container">
-                <input type="email" name="email" class="input" />
-                <label for="">Email</label>
-                <span>Email</span>
-              </div>
-              <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
-                <label for="">Message</label>
-                <span>Message</span>
-              </div>
-              <input type="submit" value="Send" class="btn a" />
-              <input type="reset" value="Clear" class="btn" id="btn_2" />
-            </form>
-          </div>
+            <div class="toast">
+                <div class="toast-content">
+                    <i class="fas fa-solid fa-check check"></i>
+                    <div class="message">
+                        <span class="text text-1">Success</span>
+                        <span class="text text-2">Your message has been sent! Have a wonderful day</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="prog"></div>
+            </div>
+            <div class="form">
+                <div class="contact-form">
+                    <form autocomplete="off" id="form" onsubmit="sendMail(); event.preventDefault();">
+                        <h3 class="title">Drop me a Message!</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" id="Name" />
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" id="Email" />
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" id="Message"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn a" name="submit" />
+                        <input type="reset" value="Clear" class="btn" id="btn_2" />
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <footer id="contact">
-      <h3>Bharath Lakshman Kumar Bandi</h3>
-      <hr>
-      <a class="hover-fx" href="https://twitter.com/Bharath_uwu" target="_blank"
-        ><i class="fab fa-twitter"></i>
-      </a>
-      <span class="vertical-line"></span>
-      <a
-        class="hover-fx"
-        href="https://www.linkedin.com/in/bharath-lakshman-9a9898239/"
-        target="_blank"
-        ><i class="fab fa-linkedin"></i>
-      </a>
-      <span class="vertical-line"></span>
-      <a
-        class="hover-fx"
-        href="https://www.facebook.com/Kxneki999/"
-        target="_blank"
-        ><i class="fab fa-facebook"></i>
-      </a>
+    <!-- ------ -->
+    <!-- Footer -->
+
+    <footer>
+        <div class="extra">
+            <p>Built From Scratch By Me :)</p>
+        </div>
+        <div class="header">
+            <h3>Bharath Lakshman Kumar</h3>
+        </div>
+        <div class="container">
+            <a class="hover-fx" href="https://twitter.com/Bharath_uwu" target="_blank" data-blobity-tooltip="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="hover-fx" href="https://www.linkedin.com/in/bharath-lakshman-9a9898239/" target="_blank"
+                data-blobity-tooltip="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="hover-fx" href="https://www.facebook.com/Kxneki999/" target="_blank"
+                data-blobity-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="hover-fx" href="https://github.com/BharathxD" target="_blank" data-blobity-tooltip="Github">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/6319e2df69.js"
-      crossorigin="anonymous">
-    </script>
-    
+    <!-- ------- -->
+    <!-- SCRIPTS -->
+
+    <script src="https://cdn.blobity.dev/by.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="JS/index.js"></script>
 
-  </body>
+    <!-- ------- -->
+
+</body>
+
 </html>
