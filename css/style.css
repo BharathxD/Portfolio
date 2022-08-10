@@ -262,9 +262,10 @@ nav {
 
 nav {
     background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: .9rem;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
     display: inline-block;
     width: -webkit-max-content;
     width: -moz-max-content;
