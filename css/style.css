@@ -1429,7 +1429,7 @@ nav .anchor-d {
     border: 2px solid rgba(255, 255, 255, .1);
     box-shadow: 0 0 40px rgba(8, 7, 16, .6);
     display: grid;
-    justify-content: space-between
+    justify-content: center
 }
 
 #contact .container .contact_container .content h1 {

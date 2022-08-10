@@ -74,7 +74,10 @@ $(document).ready(() => {
   $(window).scroll(() => {
     var scrollTop = $(window).scrollTop();
     if (scrollTop < 1000) {
-    $(parallax).css({ 'background-position-y': scrollTop / 75 + '%' });
+      console.log(scrollTop /75);
+    $(parallax).css({ 
+      'background-position-y': scrollTop / 75 + '%',
+    });
     }
   });
 });
@@ -157,7 +160,7 @@ const blobity = new Blobity({
   opacity: 0.5,
   magnetic: true,
   dotColor: "#FF2E63",
-  dotSize: 14,
+  dotSize: 12,
   font: "Montserrat",
   fontWeight: 400,
   tooltipPadding: 4,
