@@ -74,7 +74,6 @@ $(document).ready(() => {
   $(window).scroll(() => {
     var scrollTop = $(window).scrollTop();
     if (scrollTop < 1000) {
-      console.log(scrollTop /75);
     $(parallax).css({ 
       'background-position-y': scrollTop / 75 + '%',
     });
