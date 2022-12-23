@@ -13,9 +13,9 @@ const message = $('#Message');
 
 var loader = $('#preloader');
 $(window).on('load', () => {
-  loader.css({
-    display: 'none',
-  });
+  // loader.css({
+  //   display: 'none',
+  // });
 });
 
 /* -------------- */

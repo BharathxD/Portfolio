@@ -2114,6 +2114,8 @@ footer .header h3 {
     }
 }
 
+/* Credits for Liquid Loader: https://codepen.io/stob208/pen/jOMdOQK */
+
 .preloader-container {
     position: relative;
     width: 250px;
@@ -2137,7 +2139,7 @@ footer .header h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(45deg, #c7eeff, #03a9f4);
+    background: linear-gradient(45deg, #c7eeff, #eedb00);
     width: 80px;
     height: 80px;
     border-radius: 50%;
