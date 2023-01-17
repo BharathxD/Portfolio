@@ -1891,8 +1891,8 @@ footer .header h3 {
     #contact .container {
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 30px;
-        column-gap: 30px;
-        padding: 2rem
+        column-gap: 15px;
+        padding: 1rem;
     }
 
     #contact .container .toast {
