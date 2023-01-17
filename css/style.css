@@ -1092,7 +1092,7 @@ nav .anchor-d {
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
-    padding: 10px 5px;
+    padding: 10px 10px;
     overflow: hidden;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -1466,7 +1466,8 @@ nav .anchor-d {
     border-radius: 30px;
     transition: .5s;
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: center;
 }
 
 footer .container,
@@ -1964,7 +1965,7 @@ footer .header h3 {
 
     #contact .container .contact_container .lists {
         border: 2px solid rgba(255, 255, 255, .1);
-        border-radius: 25px;
+        border-radius: 10px;
         padding: 20px
     }
 
@@ -1988,7 +1989,7 @@ footer .header h3 {
     }
 
     footer {
-        padding: 25px 25px 125px;
+        padding: 25px 25px 150px;
         grid-template-columns: 1fr 1fr 1fr
     }
 
