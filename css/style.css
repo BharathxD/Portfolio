@@ -255,7 +255,7 @@ nav {
     background-color: rgba(0, 0, 0, .3);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 2px solid rgba(255, 255, 255, 0.125);
     border-radius: .9rem;
     display: inline-block;
     width: -webkit-max-content;
@@ -1206,14 +1206,14 @@ nav .anchor-d {
     font-weight: 500;
     font-size: .9rem;
     letter-spacing: .5px;
-    border-radius: 25px;
+    border-radius: 15px;
     transition: .3s
 }
 
 #contact .container .form .contact-form textarea.input {
     padding: .8rem 1.2rem;
     min-height: 150px;
-    border-radius: 22px;
+    border-radius: 15px;
     resize: none;
     overflow-y: auto
 }
@@ -1463,7 +1463,7 @@ nav .anchor-d {
     width: 100%;
     font-weight: 600;
     color: #000;
-    border-radius: 30px;
+    border-radius: 25px;
     transition: .5s;
     display: flex;
     align-items: center;
