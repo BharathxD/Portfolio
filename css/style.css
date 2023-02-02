@@ -926,7 +926,7 @@ nav .anchor-d {
 }
 
 #skills .container .backend .mad .progress {
-    margin-right: 0 !important
+    margin-right: 0 !important;
 }
 
 #skills .container .backend .mad .progress-value {
@@ -960,10 +960,10 @@ nav .anchor-d {
     border-radius: 100px;
     align-items: center;
     position: relative;
-    padding: 0 5px;
     display: flex;
-    height: 20px;
-    width: 300px
+    height: auto;
+    width: 300px;
+    padding: 3.5px;
 }
 
 #skills .container .progress-value {
@@ -1199,7 +1199,7 @@ nav .anchor-d {
 #contact .container .form .contact-form .input {
     width: 100%;
     outline: 0;
-    border: 2px solid #fafafa;
+    border: 2px solid rgba(255, 255, 255, .125);
     background: 0 0;
     padding: .6rem 1.2rem;
     color: #fafafa;
@@ -1240,20 +1240,21 @@ nav .anchor-d {
 #contact .container .form .contact-form .btn:hover {
     background-color: transparent;
     border-radius: 10px;
-    color: #fff
+    color: #fff;
 }
 
 #contact .container .form .contact-form .input-container.focus label {
     top: 0;
     transform: translateY(-50%);
     left: 25px;
-    font-size: .8rem
+    font-size: .8rem;
+    background-color: #171617;
 }
 
 #contact .container .form .contact-form .input-container.focus span:after,
 #contact .container .form .contact-form .input-container.focus span:before {
     width: 50%;
-    opacity: 1
+    /* opacity: 0; */
 }
 
 #contact .container .toast {
@@ -1537,6 +1538,22 @@ footer .container a {
     margin: auto 10px
 }
 
+.twitter:hover {
+    color: #00acee;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+}
+
+.meta:hover {
+    color: #0668E1;
+}
+
+.github:hover {
+    color: #fafafa;
+}
+
 footer .header {
     display: flex !important;
     justify-content: center;
@@ -1810,7 +1827,7 @@ footer .header h3 {
     }
 
     #skills .container .frontend span {
-        margin-bottom: 0
+        margin-bottom: 0;
     }
 
     #skills .container .backend span p,
