@@ -1,20 +1,20 @@
-const inputs = document.querySelectorAll('.input');
-const button = $('.toastBtn');
-const toast = $('.toast');
-const closeIcon = $('.close');
-const progress = $('.progress');
-const contactForm = $('.contact-form form');
-const name = $('#Name');
-const email = $('#Email');
-const message = $('#Message');
+const inputs = document.querySelectorAll(".input");
+const button = $(".toastBtn");
+const toast = $(".toast");
+const closeIcon = $(".close");
+const progress = $(".progress");
+const contactForm = $(".contact-form form");
+const name = $("#Name");
+const email = $("#Email");
+const message = $("#Message");
 
 /* ------------------- */
 /* Pre-Loader Function */
 
-var loader = $('#preloader');
-$(window).on('load', () => {
+var loader = $("#preloader");
+$(window).on("load", () => {
   loader.css({
-    display: 'none',
+    display: "none",
   });
 });
 
@@ -23,35 +23,35 @@ $(window).on('load', () => {
 
 function focusFunc() {
   let parent = this.parentNode;
-  parent.classList.add('focus');
+  parent.classList.add("focus");
 }
 
 function blurFunc() {
   let parent = this.parentNode;
-  if (this.value == '') {
-    parent.classList.remove('focus');
+  if (this.value == "") {
+    parent.classList.remove("focus");
   }
 }
 
 inputs.forEach((input) => {
-  input.addEventListener('focus', focusFunc);
-  input.addEventListener('blur', blurFunc);
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
 });
- 
+
 function reveal() {
-  var reveals = $('.reveal');
+  var reveals = $(".reveal");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
     if (elementTop < windowHeight) {
-      reveals[i].classList.add('active');
+      reveals[i].classList.add("active");
     } else {
-      reveals[i].classList.remove('active');
+      reveals[i].classList.remove("active");
     }
   }
 }
 
-window.addEventListener('scroll', reveal);
+window.addEventListener("scroll", reveal);
 
 /* ------------ */
 /* Progress Bar */
@@ -59,10 +59,10 @@ window.addEventListener('scroll', reveal);
 $(window).load(() => {
   $(window).scroll(() => {
     var wintop = $(window).scrollTop(),
-      docheight = $('body').height(),
+      docheight = $("body").height(),
       winheight = $(window).height();
     var totalScroll = (wintop / (docheight - winheight)) * 100;
-    $('.progressBar').css('width', totalScroll + '%');
+    $(".progressBar").css("width", totalScroll + "%");
   });
 });
 
@@ -70,13 +70,13 @@ $(window).load(() => {
 /* Homescreen Parallax */
 
 $(document).ready(() => {
-  parallax = $('#hero');
+  parallax = $("#hero");
   $(window).scroll(() => {
     var scrollTop = $(window).scrollTop();
     if (scrollTop < 1000) {
-    $(parallax).css({ 
-      'background-position-y': scrollTop / 75 + '%',
-    });
+      $(parallax).css({
+        "background-position-y": scrollTop / 75 + "%",
+      });
     }
   });
 });
@@ -84,18 +84,20 @@ $(document).ready(() => {
 /* -------- */
 /* Email JS */
 
-(() => {emailjs.init('VK4TXnDVYsZsA0iSQ');})();
+(() => {
+  emailjs.init("VK4TXnDVYsZsA0iSQ");
+})();
 
 function sendMail() {
   var params = {
     from_name: name.val(),
     email_id: email.val(),
-    message: message.val()
+    message: message.val(),
   };
-  emailjs.send('service_zkfvor7', 'template_9bjsywc', params).then(
+  emailjs.send("service_zkfvor7", "template_9bjsywc", params).then(
     (response) => {
       success();
-      contactForm.trigger('reset');
+      contactForm.trigger("reset");
     },
     (error) => {
       failure();
@@ -108,18 +110,18 @@ let timer1, timer2;
 /* Success Toast */
 
 function success() {
-  toast.addClass('btnOn');
-  progress.addClass('btnOn');
+  toast.addClass("btnOn");
+  progress.addClass("btnOn");
   timer1 = setTimeout(() => {
-    toast.removeClass('btnOn');
+    toast.removeClass("btnOn");
   }, 5000); //1s = 1000 milliseconds
   timer2 = setTimeout(() => {
-    progress.removeClass('btnOn');
+    progress.removeClass("btnOn");
   }, 5300);
   closeIcon.click(() => {
-    toast.removeClass('btnOn');
+    toast.removeClass("btnOn");
     setTimeout(() => {
-      progress.removeClass('btnOn');
+      progress.removeClass("btnOn");
     }, 300);
     clearTimeout(timer1);
     clearTimeout(timer2);
@@ -129,21 +131,21 @@ function success() {
 /* Failure Toast */
 
 function failure() {
-  $('.text-1').html('Error');
-  $('.text-2').html('Uh-oh - Something went wrong :(');
-  $('.check').css({ color: 'white', 'background-color': 'red' });
-  toast.addClass('btnOn');
-  progress.addClass('btnOn');
+  $(".text-1").html("Error");
+  $(".text-2").html("Uh-oh - Something went wrong :(");
+  $(".check").css({ color: "white", "background-color": "red" });
+  toast.addClass("btnOn");
+  progress.addClass("btnOn");
   timer1 = setTimeout(() => {
-    toast.removeClass('btnOn');
+    toast.removeClass("btnOn");
   }, 5000); //1s = 1000 milliseconds
   timer2 = setTimeout(() => {
-    progress.removeClass('btnOn');
+    progress.removeClass("btnOn");
   }, 5300);
   closeIcon.click(() => {
-    toast.removeClass('btnOn');
+    toast.removeClass("btnOn");
     setTimeout(() => {
-      progress.removeClass('btnOn');
+      progress.removeClass("btnOn");
     }, 300);
     clearTimeout(timer1);
     clearTimeout(timer2);
@@ -167,5 +169,15 @@ const blobity = new Blobity({
   focusableElementsOffsetX: 4,
   focusableElementsOffsetY: 4,
 });
+
+/* ---------------- */
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "G-XJT6MVNY6H");
 
 /* ---------------- */
