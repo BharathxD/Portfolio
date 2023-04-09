@@ -181,3 +181,27 @@ gtag("js", new Date());
 gtag("config", "G-XJT6MVNY6H");
 
 /* ---------------- */
+
+const element = document.querySelector("#resume");
+vanillaTilt.init(element);
+
+function initTilt() {
+  vanillaTilt.init(element);
+}
+
+function destroyTilt() {
+  element.vanillaTilt.destroy();
+}
+
+function handleScreenSizeChange() {
+  if (window.innerWidth <= 1068) {
+    // screen size is less than or equal to 1068px
+    destroyTilt();
+  } else {
+    // screen size is greater than 1068px
+    initTilt();
+  }
+}
+
+initTilt();
+window.addEventListener("resize", handleScreenSizeChange);
