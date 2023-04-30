@@ -80,12 +80,10 @@ window.addEventListener("scroll", () => {
 /* -------- */
 /* Email JS */
 
-(() => {
-  emailjs.init("VK4TXnDVYsZsA0iSQ");
-})();
+emailjs.init("VK4TXnDVYsZsA0iSQ");
 
 function sendMail() {
-  var params = {
+  const params = {
     from_name: name.val(),
     email_id: email.val(),
     message: message.val(),
