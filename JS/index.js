@@ -1,21 +1,19 @@
 const inputs = document.querySelectorAll(".input");
-const button = $(".toastBtn");
-const toast = $(".toast");
-const closeIcon = $(".close");
-const progress = $(".progress");
-const contactForm = $(".contact-form form");
-const name = $("#Name");
-const email = $("#Email");
-const message = $("#Message");
+const button = document.querySelector(".toastBtn");
+const toast = document.querySelector(".toast");
+const closeIcon = document.querySelector(".close");
+const progress = document.querySelector(".progress");
+const contactForm = document.querySelector(".contact-form form");
+const name = document.querySelector("#Name");
+const email = document.querySelector("#Email");
+const message = document.querySelector("#Message");
+var loader = document.querySelector("#preloader");
 
-/* ------------------- */
-/* Pre-Loader Function */
+/* ------------------- /
+/ Pre-Loader Function */
 
-var loader = $("#preloader");
-$(window).on("load", () => {
-  loader.css({
-    display: "none",
-  });
+window.addEventListener("load", () => {
+  loader.style.display = "none";
 });
 
 /* -------------- */
