@@ -37,16 +37,17 @@ inputs.forEach((input) => {
 });
 
 function reveal() {
-  var reveals = $(".reveal");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
+  const reveals = document.querySelectorAll(".reveal");
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach((reveal) => {
+    const elementTop = reveal.getBoundingClientRect().top;
     if (elementTop < windowHeight) {
-      reveals[i].classList.add("active");
+      reveal.classList.add("active");
     } else {
-      reveals[i].classList.remove("active");
+      reveal.classList.remove("active");
     }
-  }
+  });
 }
 
 window.addEventListener("scroll", reveal);
@@ -80,16 +81,17 @@ window.addEventListener("scroll", () => {
 
 emailjs.init("VK4TXnDVYsZsA0iSQ");
 
-function sendMail() {
+function sendMail(event) {
+  event.preventDefault();
   const params = {
-    from_name: name.val(),
-    email_id: email.val(),
-    message: message.val(),
+    from_name: name.value,
+    email_id: email.value,
+    message: message.value,
   };
   emailjs.send("service_zkfvor7", "template_9bjsywc", params).then(
     (response) => {
       success();
-      contactForm.trigger("reset");
+      contactForm.reset(); // resets the form
     },
     (error) => {
       failure();
@@ -97,9 +99,9 @@ function sendMail() {
   );
 }
 
-let timer1, timer2;
-
 /* Success Toast */
+
+let timer1, timer2;
 
 function success() {
   const toast = document.querySelector(".toast");

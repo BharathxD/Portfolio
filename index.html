@@ -485,11 +485,7 @@
         </div>
         <div class="form">
           <div class="contact-form">
-            <form
-              autocomplete="off"
-              id="form"
-              onsubmit="sendMail(); event.preventDefault();"
-            >
+            <form autocomplete="off" id="form" onsubmit="sendMail(event);">
               <h3 class="title">Drop me a Message!</h3>
               <div class="input-container">
                 <input
@@ -581,7 +577,6 @@
     <!-- SCRIPTS -->
 
     <script src="https://cdn.blobity.dev/by.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
