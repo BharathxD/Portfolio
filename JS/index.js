@@ -104,18 +104,21 @@ let timer1, timer2;
 /* Success Toast */
 
 function success() {
-  toast.addClass("btnOn");
-  progress.addClass("btnOn");
-  timer1 = setTimeout(() => {
-    toast.removeClass("btnOn");
+  const toast = document.querySelector(".toast");
+  const progress = document.querySelector(".progress");
+  const closeIcon = document.querySelector(".close");
+  toast.classList.add("btnOn");
+  progress.classList.add("btnOn");
+  let timer1 = setTimeout(() => {
+    toast.classList.remove("btnOn");
   }, 5000); //1s = 1000 milliseconds
-  timer2 = setTimeout(() => {
-    progress.removeClass("btnOn");
+  let timer2 = setTimeout(() => {
+    progress.classList.remove("btnOn");
   }, 5300);
-  closeIcon.click(() => {
-    toast.removeClass("btnOn");
+  closeIcon.addEventListener("click", () => {
+    toast.classList.remove("btnOn");
     setTimeout(() => {
-      progress.removeClass("btnOn");
+      progress.classList.remove("btnOn");
     }, 300);
     clearTimeout(timer1);
     clearTimeout(timer2);
@@ -125,21 +128,30 @@ function success() {
 /* Failure Toast */
 
 function failure() {
-  $(".text-1").html("Error");
-  $(".text-2").html("Uh-oh - Something went wrong :(");
-  $(".check").css({ color: "white", "background-color": "red" });
-  toast.addClass("btnOn");
-  progress.addClass("btnOn");
-  timer1 = setTimeout(() => {
-    toast.removeClass("btnOn");
+  var text1 = document.querySelector(".text-1");
+  var text2 = document.querySelector(".text-2");
+  var check = document.querySelector(".check");
+  var toast = document.querySelector(".toast");
+  var progress = document.querySelector(".progress");
+  const closeIcon = document.querySelector(".close");
+
+  text1.innerHTML = "Error";
+  text2.innerHTML = "Uh-oh - Something went wrong :(";
+  check.style.color = "white";
+  check.style.backgroundColor = "red";
+  toast.classList.add("btnOn");
+  progress.classList.add("btnOn");
+  var timer1 = setTimeout(() => {
+    toast.classList.remove("btnOn");
   }, 5000); //1s = 1000 milliseconds
-  timer2 = setTimeout(() => {
-    progress.removeClass("btnOn");
+  var timer2 = setTimeout(() => {
+    progress.classList.remove("btnOn");
   }, 5300);
-  closeIcon.click(() => {
-    toast.removeClass("btnOn");
+
+  closeIcon.addEventListener("click", function () {
+    toast.classList.remove("btnOn");
     setTimeout(() => {
-      progress.removeClass("btnOn");
+      progress.classList.remove("btnOn");
     }, 300);
     clearTimeout(timer1);
     clearTimeout(timer2);
