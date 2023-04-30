@@ -56,13 +56,13 @@ window.addEventListener("scroll", reveal);
 /* ------------ */
 /* Progress Bar */
 
-$(window).load(() => {
-  $(window).scroll(() => {
-    var wintop = $(window).scrollTop(),
-      docheight = $("body").height(),
-      winheight = $(window).height();
-    var totalScroll = (wintop / (docheight - winheight)) * 100;
-    $(".progressBar").css("width", totalScroll + "%");
+window.addEventListener("load", () => {
+  window.addEventListener("scroll", () => {
+    const wintop = window.pageYOffset;
+    const docheight = document.body.clientHeight;
+    const winheight = window.innerHeight;
+    const totalScroll = (wintop / (docheight - winheight)) * 100;
+    document.querySelector(".progressBar").style.width = totalScroll + "%";
   });
 });
 
