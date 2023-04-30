@@ -69,16 +69,12 @@ window.addEventListener("load", () => {
 /* ------------------- */
 /* Homescreen Parallax */
 
-$(document).ready(() => {
-  parallax = $("#hero");
-  $(window).scroll(() => {
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop < 1000) {
-      $(parallax).css({
-        "background-position-y": scrollTop / 75 + "%",
-      });
-    }
-  });
+const parallax = document.querySelector("#hero");
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset;
+  if (scrollTop < 1000) {
+    parallax.style.backgroundPositionY = scrollTop / 75 + "%";
+  }
 });
 
 /* -------- */
